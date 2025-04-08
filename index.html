@@ -29,32 +29,21 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active" aria-current="page" href="#">Catalogo libri</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Dropdown
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
+                                <a class="nav-link" href="#">Anagrafica</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                                <a class="nav-link" href="#">Storico</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" aria-disabled="true">Help</a>
                             </li>
                         </ul>
                         <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
+                            <input class="form-control me-2" style="background-color: #ffffff;" data-bs-theme="light" type="search" placeholder="Cerca ..." aria-label="Search">
+                            <button class="btn btn-outline-light" type="submit">Cerca</button>
                         </form>
                     </div>
                 </div>
@@ -67,6 +56,9 @@
             <!-- LAYOUT -->
 
             <div class="row g-3">
+
+                <!-- catalogue -->
+
                 <div class="col-12 col-lg-8">
                     <div class="row py-3">
                         <div class="col-6">
@@ -125,7 +117,7 @@
                                 <td>
                                     <span class="badge rounded-pill text-bg-success">Secondary</span>
                                 </td>
-                                <td class="d-none d-md-table-cell">---</td>
+                                <td class="d-none d-md-table-cell">18/12/2025</td>
                                 <td>
                                     <div class="d-flex gap-2 justify-content-center">
                                         <button class="btn btn-outline-secondary btn-sm rounded">
@@ -191,6 +183,9 @@
                         </tbody>
                     </table>
                 </div>
+
+                <!-- list -->
+
                 <div class="col-12 col-lg-4 py-4">
                     <div class="card">
                         <div class="card-header">
@@ -199,18 +194,24 @@
                         <div class="card-body">
                             <ul class="list-group">
                                 <li class="list-group-item">
-                                  <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
-                                  <label class="form-check-label stretched-link" for="firstCheckboxStretched">Chiamare Segreteria</label>
+                                    <input class="form-check-input me-1" type="checkbox" value=""
+                                        id="firstCheckboxStretched">
+                                    <label class="form-check-label stretched-link" for="firstCheckboxStretched">Chiamare
+                                        Segreteria</label>
                                 </li>
                                 <li class="list-group-item">
-                                  <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxStretched">
-                                  <label class="form-check-label stretched-link" for="secondCheckboxStretched">Mandare Avvisi</label>
+                                    <input class="form-check-input me-1" type="checkbox" value=""
+                                        id="secondCheckboxStretched">
+                                    <label class="form-check-label stretched-link" for="secondCheckboxStretched">Mandare
+                                        Avvisi</label>
                                 </li>
                                 <li class="list-group-item">
-                                  <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxStretched">
-                                  <label class="form-check-label stretched-link" for="thirdCheckboxStretched">Ordinare Nuovi libri</label>
+                                    <input class="form-check-input me-1" type="checkbox" value=""
+                                        id="thirdCheckboxStretched">
+                                    <label class="form-check-label stretched-link" for="thirdCheckboxStretched">Ordinare
+                                        Nuovi libri</label>
                                 </li>
-                              </ul>
+                            </ul>
                         </div>
                     </div>
                     <div class="card my-4">
@@ -218,16 +219,39 @@
                             F.A.Q.
                         </div>
                         <div class="card-body">
-                            <li class="nav-item dropdown">
-                                <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Dropdown
-                                </button>
-                                <ul class="dropdown-menu dropdown-menu-dark">
-                                  <li><a class="dropdown-item" href="#">Action</a></li>
-                                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                              </li>
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        ome Aggiungere un nuovo Libro?
+                                    </button>
+                                  </h2>
+                                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet consequatur error voluptates eaque alias nesciunt tempora. Tempore at pariatur, necessitatibus, dicta et velit deleniti vitae culpa facere quaerat, dolorem nihil.</div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                      Come posso acceder
+                                    </button>
+                                  </h2>
+                                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur quaerat saepe perspiciatis in assumenda minus expedita quas ad magnam nemo omnis at impedit placeat voluptates obcaecati voluptate distinctio, maxime fugiat.</div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                      Posso usare queste dashboard
+                                    </button>
+                                  </h2>
+                                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus provident maiores alias soluta aut labore tempora vitae. Tempora labore culpa, magnam et, deserunt quidem repellat, neque accusantium assumenda molestiae quibusdam.</div>
+                                  </div>
+                                </div>
+                              </div>
+                            
                         </div>
                     </div>
 
